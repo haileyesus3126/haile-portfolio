@@ -23,8 +23,10 @@ function Resume() {
           <ul>
             <li>Node.js</li>
             <li>Express.js</li>
+            <li>Java</li>
             <li>MongoDB</li>
             <li>MySQL</li>
+            <li>Spring Boot</li>
           </ul>
         </div>
 
