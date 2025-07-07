@@ -60,6 +60,7 @@
 .btn:hover {
   background-color: #00cc70;
   transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 255, 136, 0.4);
 }
 
 /* About Info Card Styling */
@@ -123,3 +124,4 @@
     text-align: center;
   }
 }
+

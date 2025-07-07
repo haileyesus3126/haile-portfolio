@@ -13,7 +13,7 @@ function Home() {
       }}
     >
       <div className="overlay">
-        <div className="home-content">
+        <div className="home-content" data-aos="fade-up">
           <h1>Welcome</h1>
           <h2>
             I'm{" "}
@@ -29,7 +29,7 @@ function Home() {
               />
             </span>
           </h2>
-         <p>Passionate about building clean & modern web apps</p>
+          <p>Passionate about building clean & modern web apps</p>
           <a href="#contact" className="btn">
             Hire Me
           </a>

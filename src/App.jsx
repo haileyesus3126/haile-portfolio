@@ -7,9 +7,9 @@ import Resume from "./components/Resume/Resume";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import Testimonials from "./components/Testimonials/Testimonials";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Testimonials from "./components/Testimonials/Testimonials";
 
 function App() {
   useEffect(() => {

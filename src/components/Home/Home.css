@@ -3,6 +3,7 @@
   background-size: cover;
   background-position: center;
   position: relative;
+  animation: backgroundAnimation 20s ease infinite;
 }
 
 @keyframes backgroundAnimation {
@@ -19,6 +20,8 @@
 
 .overlay {
   height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,6 +32,8 @@
   color: #fff;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
   padding: 0 20px;
+  position: relative;
+  z-index: 2;
 }
 
 .home-content h1 {
@@ -43,11 +48,13 @@
 
 .typed-text {
   color: #ffc107;
+  text-shadow: 0 0 10px rgba(255, 193, 7, 0.6);
 }
 
 .home-content p {
   font-size: 18px;
   margin-bottom: 30px;
+  color: #ccc;
 }
 
 .btn {
