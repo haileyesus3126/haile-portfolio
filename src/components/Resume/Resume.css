@@ -1,95 +1,82 @@
+/* Overall Section Styling */
 .resume {
   padding: 60px 20px;
-}
-
-.resume h2 {
+  background-color: #121212;
   text-align: center;
-  font-size: 36px;
-  margin-bottom: 40px;
-  color: #00d084;
+  color: #fff;
 }
 
+/* Section Heading */
+.resume h2 {
+  font-size: 2.8rem;
+  color: #00ff88;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+/* Container for All Skill Boxes */
 .skills-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
-  max-width: 1000px;
-  margin: 0 auto;
+  gap: 25px;
 }
 
+/* Individual Skill Card */
 .skill {
-  background-color: #2a2a2a;
-  padding: 20px;
-  border-radius: 10px;
-  width: 250px;
-  text-align: center;
-  transition: transform 0.3s;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  background-color: #1e1e1e;
+  padding: 25px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
 }
 
+/* Hover Effect on Skill Card */
 .skill:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.6);
 }
 
+/* Heading Inside Each Skill Card */
 .skill h3 {
-  color: #00d084;
+  color: #00ff88;
+  font-size: 1.6rem;
   margin-bottom: 15px;
-  font-size: 20px;
+  display: flex;
+  align-items: center;
 }
 
+/* Icon Next to Heading */
+.icon {
+  margin-right: 10px;
+  color: #00ff88;
+  font-size: 1.5rem;
+}
+
+/* List Styling */
 .skill ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-.skill li {
-  font-size: 16px;
-  margin: 8px 0;
-  color: #fff;
+.skill ul li {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.5;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .resume h2 {
-    font-size: 30px;
+/* Responsive Layout */
+@media (max-width: 900px) {
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
   }
 
   .skill {
-    width: 220px;
-    padding: 18px;
-  }
-
-  .skill h3 {
-    font-size: 18px;
-  }
-
-  .skill li {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .resume {
-    padding: 40px 15px;
-  }
-
-  .resume h2 {
-    font-size: 26px;
-    margin-bottom: 25px;
-  }
-
-  .skill {
-    width: 100%;
-    max-width: 300px;
-    padding: 16px;
-  }
-
-  .skill h3 {
-    font-size: 16px;
-  }
-
-  .skill li {
-    font-size: 14px;
+    width: 90%;
   }
 }

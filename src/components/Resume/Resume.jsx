@@ -1,4 +1,5 @@
 import React from "react";
+import { FaCode, FaServer, FaTools } from "react-icons/fa";
 import "./Resume.css";
 
 function Resume() {
@@ -8,7 +9,7 @@ function Resume() {
       <div className="skills-container">
         
         <div className="skill">
-          <h3>Frontend</h3>
+          <h3><FaCode className="icon" /> Frontend</h3>
           <ul>
             <li>HTML5</li>
             <li>CSS3</li>
@@ -16,15 +17,15 @@ function Resume() {
             <li>React.js</li>
             <li>Next.js</li>
             <li>Bootstrap</li>
-             <li>Responsive Web Design</li>
-             <li>Tailwind CSS</li>
-             <li>Cross-Browser Compatibility</li>
-             <li>Version Control (Git, GitHub)</li>
+            <li>Responsive Web Design</li>
+            <li>Tailwind CSS</li>
+            <li>Cross-Browser Compatibility</li>
+            <li>Version Control (Git, GitHub)</li>
           </ul>
         </div>
 
         <div className="skill">
-          <h3>Backend</h3>
+          <h3><FaServer className="icon" /> Backend</h3>
           <ul>
             <li>Node.js</li>
             <li>Express.js</li>
@@ -39,7 +40,7 @@ function Resume() {
         </div>
 
         <div className="skill">
-          <h3>Tools & Others</h3>
+          <h3><FaTools className="icon" /> Tools & Others</h3>
           <ul>
             <li>Git & GitHub (Version Control)</li>
             <li>Figma (UI/UX Design & Prototyping)</li>
