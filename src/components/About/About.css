@@ -1,88 +1,125 @@
+/* About Section Styling */
 .about {
   padding: 60px 20px;
-  background-color: #111;
+  background-color: #1e1e1e;
   color: #fff;
+  text-align: center;
 }
 
 .about h2 {
-  text-align: center;
-  font-size: 36px;
+  font-size: 2.8rem;
+  color: #00ff88;
   margin-bottom: 40px;
-  color: #00d084;
 }
 
+/* Container for Text and Info */
 .about-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 40px;
-  max-width: 1000px;
+  justify-content: center;
+  gap: 30px;
+  max-width: 900px;
   margin: 0 auto;
+  background-color: #121212;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
 }
 
-.about-text,
-.about-info {
-  flex: 1 1 45%;
-  min-width: 280px;
+/* About Text Section */
+.about-text {
+  flex: 1 1 50%;
+  text-align: left;
 }
 
 .about-text p {
-  font-size: 18px;
-  margin-bottom: 20px;
-  line-height: 1.7;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  line-height: 1.6;
   color: #ccc;
 }
 
 .about-text span {
-  color: #00d084;
+  color: #00ff88;
   font-weight: bold;
 }
 
+/* CV Button Styling */
 .btn {
   display: inline-block;
-  padding: 12px 30px;
-  background-color: #00d084;
-  color: #fff;
-  border-radius: 25px;
-  text-decoration: none;
-  font-size: 16px;
   margin-top: 15px;
-  transition: background-color 0.3s, transform 0.3s;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  background-color: #00ff88;
+  color: #000;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #00a56d;
-  transform: scale(1.05);
+  background-color: #00cc70;
+  transform: translateY(-2px);
 }
 
+/* About Info Card Styling */
 .about-info {
-  background-color: #222;
+  flex: 1 1 35%;
+  background-color: #1e1e1e;
   padding: 20px;
-  border-radius: 10px;
-  color: #fff;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
+  text-align: left;
 }
 
 .about-info p {
-  font-size: 18px;
-  margin-bottom: 15px;
+  margin: 12px 0;
+  font-size: 1rem;
+  color: #ccc;
+  display: flex;
+  align-items: center;
 }
 
 .about-info strong {
-  color: #00d084;
+  color: #00ff88;
+  margin-left: 5px;
 }
 
-/* Responsive: Stack content on small screens */
+/* Icon Styling */
+.icon {
+  margin-right: 8px;
+  color: #00ff88;
+  font-size: 1.2rem;
+}
+
+.icon-btn {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
   .about-content {
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+    padding: 20px;
   }
 
   .about-text,
   .about-info {
     width: 100%;
+    text-align: center;
+  }
+
+  .about-info {
+    text-align: center;
+  }
+
+  .about-info p {
+    justify-content: center;
+  }
+
+  .about-text {
+    text-align: center;
   }
 }

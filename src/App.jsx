@@ -11,10 +11,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Testimonials from "./components/Testimonials/Testimonials";
 
-
 function App() {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
 
     const backToTop = document.getElementById("backToTop");
 
@@ -43,9 +45,7 @@ function App() {
         <Resume />
         <Portfolio />
         <Testimonials />
-
         <Contact />
-
         <Footer />
 
         <a href="#home" className="back-to-top" id="backToTop">
