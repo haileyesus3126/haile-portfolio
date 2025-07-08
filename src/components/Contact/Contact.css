@@ -52,6 +52,50 @@
   color: #00d084;
   transform: scale(1.2);
 }
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2e2e2e;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #00d084;
+  background-color: #3a3a3a;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #00d084;
+  color: #000;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #00ff88;
+}
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {

@@ -1,32 +1,63 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "./Contact.css";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
-function Contact() {
+const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_7m6ul1n",        
+        "template_90fhvs3",      
+        form.current,
+        "8yDueQJ3qutZgZRIP"    
+      )
+      .then(
+        (result) => {
+          alert("Message sent successfully!");
+          form.current.reset();
+        },
+        (error) => {
+          alert("Failed to send message. Please try again.");
+          console.error(error.text);
+        }
+      );
+  };
+
   return (
-    <section id="contact" className="contact" data-aos="fade-up">
+    <section className="contact">
       <h2>Contact Me</h2>
-      <p>If you'd like to collaborate or have questions, feel free to reach out!</p>
+      <p>Feel free to reach out using the form below 👇</p>
 
-      <div className="contact-info" data-aos="fade-right">
-        <p><strong>Email:</strong> Haileyesus2024@gmail.com</p>
-        <p><strong>Phone:</strong> +251 989 853 281</p>
-        <p><strong>Location:</strong> Addis Ababa, Ethiopia</p>
+      <form ref={form} onSubmit={sendEmail} className="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="text" name="title" placeholder="Subject" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required />
+        <button type="submit">Send Message</button>
+      </form>
+
+      <div className="contact-info">
+        <p><strong>Email:</strong> haileyesus2024@gmail.com</p>
+        <p><strong>Location:</strong> Ethiopia</p>
       </div>
 
-      <div className="contact-icons" data-aos="fade-left">
-        <a href="https://github.com/" target="_blank" rel="noreferrer">
-          <FaGithub />
+      <div className="contact-icons">
+        <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">
+          <i className="fab fa-github"></i>
         </a>
-        <a href="https://linkedin.com/" target="_blank" rel="noreferrer">
-          <FaLinkedin />
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noreferrer">
+          <i className="fab fa-linkedin"></i>
         </a>
-        <a href="https://twitter.com/" target="_blank" rel="noreferrer">
-          <FaTwitter />
+        <a href="mailto:haileyesus2024@gmail.com">
+          <i className="fas fa-envelope"></i>
         </a>
       </div>
     </section>
   );
-}
+};
 
 export default Contact;
