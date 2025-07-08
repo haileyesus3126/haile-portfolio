@@ -79,3 +79,31 @@
     width: 90%;
   }
 }
+
+/* Extra Small Devices (Phones under 480px) */
+@media (max-width: 480px) {
+  .resume {
+    padding: 40px 15px;
+  }
+
+  .resume h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .skill {
+    padding: 20px;
+  }
+
+  .skill h3 {
+    font-size: 1.2rem;
+  }
+
+  .skill ul li {
+    font-size: 0.95rem;
+  }
+
+  .icon {
+    font-size: 1.2rem;
+  }
+}

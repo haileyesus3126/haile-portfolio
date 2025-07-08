@@ -69,3 +69,32 @@
     text-align: center;
   }
 }
+
+/* Extra Small Devices (Phones under 480px) */
+@media (max-width: 480px) {
+  .testimonials {
+    padding: 40px 15px;
+  }
+
+  .testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .testimonial-card p {
+    font-size: 1rem;
+  }
+
+  .testimonial-card h4 {
+    font-size: 0.95rem;
+  }
+
+  .testimonial-card h4 span {
+    font-size: 0.85rem;
+  }
+}

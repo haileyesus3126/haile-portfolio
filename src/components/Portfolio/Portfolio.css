@@ -106,3 +106,40 @@
     font-size: 14px;
   }
 }
+
+/* Extra Small Devices (Phones under 480px) */
+@media (max-width: 480px) {
+  .portfolio {
+    padding: 40px 15px;
+  }
+
+  .portfolio h2 {
+    font-size: 1.8rem;
+    margin-bottom: 35px;
+  }
+
+  .project-card img {
+    height: 180px;
+  }
+
+  .project-info {
+    padding: 15px;
+  }
+
+  .project-info h3 {
+    font-size: 16px;
+  }
+
+  .project-info p {
+    font-size: 13px;
+  }
+
+  .project-links a {
+    padding: 7px 14px;
+    font-size: 13px;
+  }
+
+  .icon-link {
+    font-size: 1rem;
+  }
+}

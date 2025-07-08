@@ -112,16 +112,63 @@
     text-align: center;
   }
 
+  .about-text p {
+    font-size: 1rem;
+  }
+
   .about-info {
     text-align: center;
+    padding: 15px;
   }
 
   .about-info p {
     justify-content: center;
+    font-size: 0.95rem;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .about-text {
-    text-align: center;
+  .icon {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    margin-top: 20px;
+    padding: 10px 25px;
+    font-size: 1rem;
+  }
+
+  .about h2 {
+    font-size: 2.2rem;
   }
 }
 
+/* Extra Small Devices (e.g., Phones below 480px) */
+@media (max-width: 480px) {
+  .about {
+    padding: 40px 15px;
+  }
+
+  .about-content {
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
+  }
+
+  .about h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+
+  .about-info p {
+    font-size: 0.9rem;
+  }
+}
